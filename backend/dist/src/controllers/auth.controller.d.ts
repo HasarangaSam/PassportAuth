@@ -1,0 +1,11 @@
+import type { NextFunction, Request, Response } from "express";
+export declare const register: (req: Request, res: Response) => Promise<void>;
+export declare const login: (req: Request, res: Response, next: NextFunction) => void;
+export declare const refresh: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getProfile: (req: Request, res: Response) => void;
+export declare const logout: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const logoutAllDevices: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const changePassword: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const googleLogin: any;
+export declare const googleCallback: (req: Request, res: Response, next: NextFunction) => void;
+export declare const exchangeOAuthCode: (req: Request, res: Response) => Promise<void>;
